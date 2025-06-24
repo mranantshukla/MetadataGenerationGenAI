@@ -1,0 +1,35 @@
+# Análisis Comparativo de Sistemas de Inteligencia Artificial
+## Comparative Analysis of Artificial Intelligence Systems
+
+**Autores/Authors:** 
+- Prof. Dr. Jean-Pierre Dubois (Université de Paris)
+- Dr. Hiroshi Tanaka (東京大学 - University of Tokyo)
+- Dra. Carmen Rodríguez (Universidad Complutense Madrid)
+
+### Resumen/Abstract
+Este estudio presenta un análisis comparativo de diferentes arquitecturas de IA implementadas en Europa, Asia y América. 
+
+This study presents a comparative analysis of different AI architectures implemented across Europe, Asia, and America.
+
+### Metodología/Methodology
+La investigación se realizó mediante encuestas en línea y entrevistas presenciales en tres idiomas principales:
+- Español (n=200 participantes)
+- English (n=180 participants)  
+- 日本語 (n=150 参加者)
+
+The research was conducted through online surveys and face-to-face interviews in three main languages.
+
+### Resultados Clave/Key Results
+1. **Europa**: 78% adoption rate for AI systems
+2. **アジア**: 85% 採用率 (adoption rate)
+3. **América Latina**: 65% tasa de adopción
+
+### Conclusiones/Conclusions
+Los resultados indican diferencias significativas en la adopción de IA entre regiones, influenciadas por factores culturales y económicos.
+
+The results indicate significant differences in AI adoption across regions, influenced by cultural and economic factors.
+
+**Palabras clave/Keywords:** Inteligencia Artificial, Machine Learning, 人工知能, Cross-cultural Analysis
+
+*Fecha de publicación/Publication Date: 15 enero 2025*
+*Correspondencia/Correspondence: jean-pierre.dubois@univ-paris.fr*

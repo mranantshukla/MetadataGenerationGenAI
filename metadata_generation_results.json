@@ -1,0 +1,210 @@
+{
+  "processing_summary": [
+    {
+      "filename": "sample_document.txt",
+      "text_length": 957,
+      "word_count": 127,
+      "entity_count": 15,
+      "keyword_count": 0,
+      "primary_category": "Research Paper",
+      "sentiment": "neutral"
+    },
+    {
+      "filename": "technical_report.txt",
+      "text_length": 495,
+      "word_count": 63,
+      "entity_count": 7,
+      "keyword_count": 0,
+      "primary_category": "Technical Documentation",
+      "sentiment": "neutral"
+    },
+    {
+      "filename": "financial_analysis.txt",
+      "text_length": 418,
+      "word_count": 62,
+      "entity_count": 13,
+      "keyword_count": 0,
+      "primary_category": "Financial Report",
+      "sentiment": "neutral"
+    }
+  ],
+  "detailed_results": [
+    {
+      "filename": "sample_document.txt",
+      "dublin_core_metadata": {
+        "dc:title": "Artificial Intelligence in Healthcare",
+        "dc:creator": "Artificial Intelligence",
+        "dc:subject": [
+          "Research Paper",
+          "Stanford University",
+          "NIH",
+          "News Article",
+          "Google Health",
+          "Academic Paper"
+        ],
+        "dc:description": "The study was conducted by Dr. Sarah Johnson at Stanford University in collaboration with Google Health. The research was funded by the National Institutes of Health (NIH) and published in Nature Medicine in 2024.",
+        "dc:publisher": "Stanford University",
+        "dc:date": "2024",
+        "dc:type": "Text",
+        "dc:format": "application/octet-stream",
+        "dc:language": "en",
+        "dc:identifier": "sample_document.txt",
+        "dc:rights": "All rights reserved"
+      },
+      "ai_analysis": {
+        "entities": {
+          "CARDINAL": [],
+          "PERSON": [
+            "Artificial Intelligence",
+            "Sarah Johnson",
+            "Key Findings"
+          ],
+          "ORG": [
+            "Stanford University",
+            "NIH",
+            "Google Health",
+            "Healthcare",
+            "the National Institutes of Health"
+          ],
+          "MONEY": [
+            "##"
+          ],
+          "GPE": [
+            "AI"
+          ],
+          "PERCENT": [
+            "95%",
+            "40%",
+            "60%"
+          ],
+          "WORK_OF_ART": [
+            "Nature Medicine"
+          ],
+          "DATE": [
+            "2024"
+          ]
+        },
+        "summary": "The study was conducted by Dr. Sarah Johnson at Stanford University in collaboration with Google Health. The research was funded by the National Institutes of Health (NIH) and published in Nature Medicine in 2024.",
+        "categories": [
+          "Research Paper",
+          "Academic Paper",
+          "News Article"
+        ],
+        "sentiment": {
+          "label": "neutral",
+          "score": 0.8105899095535278
+        }
+      }
+    },
+    {
+      "filename": "technical_report.txt",
+      "dublin_core_metadata": {
+        "dc:title": "Technical Report: Cloud Infrastructure Optimization",
+        "dc:creator": "Docker",
+        "dc:subject": [
+          "Business Report",
+          "Kubernetes",
+          "Technical Documentation",
+          "News Article",
+          "Microsoft Azure",
+          "DevOps"
+        ],
+        "dc:description": "This technical report analyzes the performance optimization of cloud infrastructure for enterprise applications. The study was conducted by the DevOps team at Microsoft Azure. The report shows that implementing containerization and microservices architecture can improve system performance by 45%.",
+        "dc:publisher": "Microsoft Azure",
+        "dc:date": "2025-06-25",
+        "dc:type": "Text",
+        "dc:format": "application/octet-stream",
+        "dc:language": "en",
+        "dc:identifier": "technical_report.txt",
+        "dc:rights": "All rights reserved"
+      },
+      "ai_analysis": {
+        "entities": {
+          "ORG": [
+            "Microsoft Azure",
+            "DevOps",
+            "Kubernetes"
+          ],
+          "PERCENT": [
+            "45%",
+            "30%"
+          ],
+          "PERSON": [
+            "Docker",
+            "Cloud Platform"
+          ]
+        },
+        "summary": "This technical report analyzes the performance optimization of cloud infrastructure for enterprise applications. The study was conducted by the DevOps team at Microsoft Azure. The report shows that implementing containerization and microservices architecture can improve system performance by 45%.",
+        "categories": [
+          "Technical Documentation",
+          "News Article",
+          "Business Report"
+        ],
+        "sentiment": {
+          "label": "neutral",
+          "score": 0.7852301597595215
+        }
+      }
+    },
+    {
+      "filename": "financial_analysis.txt",
+      "dublin_core_metadata": {
+        "dc:title": "Quarterly Financial Analysis - Q4 2024",
+        "dc:creator": "Financial Highlights",
+        "dc:subject": [
+          "Business Report",
+          "CFO",
+          "the Finance Department",
+          "News Article",
+          "TechCorp Inc.",
+          "Financial Report"
+        ],
+        "dc:description": "TechCorp Inc. shows strong growth in the technology sector with expanding market share. Revenue: $2.5 million (15% increase YoY) Net Profit: $450,000 (12% increaseYoY) Operating Expenses: $1.8 million (1.2% increase)",
+        "dc:publisher": "CFO",
+        "dc:date": "2024",
+        "dc:type": "Text",
+        "dc:format": "application/octet-stream",
+        "dc:language": "en",
+        "dc:identifier": "financial_analysis.txt",
+        "dc:rights": "All rights reserved"
+      },
+      "ai_analysis": {
+        "entities": {
+          "DATE": [
+            "quarterly",
+            "2024"
+          ],
+          "ORG": [
+            "CFO",
+            "the Finance Department",
+            "TechCorp Inc.",
+            "YoY"
+          ],
+          "PERSON": [
+            "Financial Highlights",
+            "John Smith"
+          ],
+          "MONEY": [
+            "450,000",
+            "$2.5 million",
+            "$1.8 million"
+          ],
+          "PERCENT": [
+            "12%",
+            "15%"
+          ]
+        },
+        "summary": "TechCorp Inc. shows strong growth in the technology sector with expanding market share. Revenue: $2.5 million (15% increase YoY) Net Profit: $450,000 (12% increaseYoY) Operating Expenses: $1.8 million (1.2% increase)",
+        "categories": [
+          "Financial Report",
+          "Business Report",
+          "News Article"
+        ],
+        "sentiment": {
+          "label": "neutral",
+          "score": 0.885261595249176
+        }
+      }
+    }
+  ]
+}
