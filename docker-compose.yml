@@ -1,0 +1,64 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://metadata_user:metadata_pass@db:5432/metadata_db
+      - REDIS_URL=redis://redis:6379/0
+      - REDIS_ENABLED=true
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - CELERY_ENABLED=true
+      - CORS_ORIGINS=["http://localhost:8000","http://localhost:3000"]
+    volumes:
+      - ./uploads:/app/uploads
+      - ./models:/app/models
+    depends_on:
+      - db
+      - redis
+    restart: unless-stopped
+
+  celery-worker:
+    build: .
+    command: celery -A app.tasks.celery_app worker --loglevel=info
+    environment:
+      - DATABASE_URL=postgresql://metadata_user:metadata_pass@db:5432/metadata_db
+      - REDIS_URL=redis://redis:6379/0
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    volumes:
+      - ./uploads:/app/uploads
+      - ./models:/app/models
+    depends_on:
+      - db
+      - redis
+    restart: unless-stopped
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=metadata_user
+      - POSTGRES_PASSWORD=metadata_pass
+      - POSTGRES_DB=metadata_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:
+

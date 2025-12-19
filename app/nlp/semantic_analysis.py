@@ -161,7 +161,7 @@ class SemanticAnalyzer:
                 text, 
                 keyphrase_ngram_range=(1, 2), 
                 stop_words='english',
-                top_k=top_k,
+                top_n=top_k,  # Fixed: KeyBERT uses top_n, not top_k
                 use_mmr=True,
                 diversity=0.5
             )

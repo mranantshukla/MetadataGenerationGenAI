@@ -194,7 +194,7 @@
             document.getElementById('processBtn').innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
 
             try {
-                const response = await fetch('/upload-documents/', {
+                const response = await fetch('/api/v1/documents/upload', {
                     method: 'POST',
                     body: formData
                 });
